@@ -65,6 +65,9 @@ export default function HomePage() {
           <p>
             Kada se pojave vlaga, buđ, kondenzacija, loš vazduh ili problem sa grejanjem, prvo treba razumeti uzrok. Tek tada ima smisla birati opremu ili radove.
           </p>
+          <div className="hero-actions">
+            <a className="button button-secondary" href="/vlaga">Vlaga, buđ i kondenzacija →</a>
+          </div>
         </div>
         <ul className="service-list">
           {privateItems.map((item) => <li key={item}>{item}</li>)}
