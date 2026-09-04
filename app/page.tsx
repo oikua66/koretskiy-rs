@@ -1,34 +1,33 @@
 const privateItems = [
   'Vlaga, buđ i kondenzacija',
-  'Ventilacija i kvalitet vazduha',
-  'Toplotne pumpe',
+  'Loš vazduh i nedovoljna ventilacija',
   'Grejanje i hlađenje',
+  'Topla voda',
 ];
 
 const businessItems = [
-  'Radijaciono grejanje EFFI',
-  'Climtec ventilacija sa rekuperacijom',
-  'Toplotne pumpe',
-  'Modernizacija mikroklime',
-  'Rešenja za sportske, ugostiteljske i druge objekte',
+  'Grejanje velikih i visokih prostora',
+  'Ventilacija i kvalitet vazduha',
+  'Grejanje, hlađenje i topla voda',
+  'Rešenja za sportske sale, ugostiteljstvo i druge objekte',
 ];
 
 const technologyItems = [
   {
     title: 'Climtec',
-    text: 'Decentralizovana ventilacija sa rekuperacijom za stanove, kuće, rekonstrukcije i objekte gde je potrebna kontrolisana izmena vazduha.',
+    text: 'Ventilacija sa povratom toplote za stanove, kuće i poslovne prostore — bez velikog sistema kanala.',
     href: '/climtec',
     cta: 'Izbor opreme i ponuda →',
   },
   {
     title: 'EFFI',
-    text: 'Radijacioni sistemi grejanja za visoke, velike i specifične prostore, sa manjim zagrevanjem vazduha ispod plafona.',
+    text: 'Radijaciono grejanje za visoke i velike prostore, gde klasično zagrevanje vazduha često nije najefikasnije rešenje.',
     href: '/effi',
     cta: 'Izbor opreme i ponuda →',
   },
   {
     title: 'Toplotne pumpe',
-    text: 'Toplotne pumpe za grejanje, hlađenje i sanitarnu toplu vodu, uključujući kombinovane i nestandardne energetske šeme.',
+    text: 'Za grejanje, hlađenje i toplu vodu — od kuća do posebnih rešenja za sportske, poslovne i javne objekte.',
     href: '/toplotne-pumpe',
     cta: 'Opis rešenja →',
   },
@@ -53,9 +52,9 @@ export default function HomePage() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow">Inženjerska rešenja u Srbiji</p>
-          <h1>Praktična rešenja za bolji vazduh, grejanje i mikroklimu.</h1>
+          <h1>Rešenja za svež vazduh, grejanje i udobniji prostor.</h1>
           <p className="lead">
-            Za stanove i kuće, kao i za poslovne i javne objekte. Polazimo od konkretnog problema i biramo rešenje koje odgovara objektu.
+            Za stanove, kuće, poslovne i javne objekte. Prvo gledamo šta je problem i šta objekat zaista traži, pa tek onda biramo rešenje.
           </p>
           <div className="hero-actions">
             <a className="button" href="#dom">Za dom i stan</a>
@@ -69,7 +68,7 @@ export default function HomePage() {
           <p className="eyebrow">Za privatne klijente</p>
           <h2>Za dom i stan</h2>
           <p>
-            Kada se pojave vlaga, buđ, kondenzacija, loš vazduh ili problem sa grejanjem, prvo treba razumeti uzrok. Tek tada ima smisla birati opremu ili radove.
+            Ako imate vlagu, buđ, kondenzaciju, loš vazduh ili problem sa grejanjem, prvo treba razumeti uzrok. Tek tada ima smisla birati opremu ili radove.
           </p>
           <div className="hero-actions">
             <a className="button button-secondary" href="/vlaga">Vlaga, buđ i kondenzacija →</a>
@@ -87,10 +86,10 @@ export default function HomePage() {
           <p className="eyebrow">Za firme i ustanove</p>
           <h2>Za poslovne i javne objekte</h2>
           <p>
-            Rešenja za objekte sa velikom zapreminom, promenljivim brojem korisnika, posebnim zahtevima za temperaturu, kvalitet vazduha ili kretanje vazduha.
+            Pomažemo kada objekat ima problem sa grejanjem, hlađenjem, ventilacijom, toplom vodom ili potrošnjom energije.
           </p>
           <p>
-            Primena uključuje sportske sale i centre, kafiće i restorane, škole, komercijalne prostore, industrijske i logističke objekte.
+            Radimo sa sportskim salama i centrima, kafićima i restoranima, školama, komercijalnim, industrijskim i logističkim objektima.
           </p>
           <div className="hero-actions">
             <a className="button button-secondary" href="/effi">EFFI radijaciono grejanje →</a>
@@ -105,7 +104,7 @@ export default function HomePage() {
 
       <section className="section" id="tehnologije">
         <p className="eyebrow">Tehnologije i rešenja</p>
-        <h2>Oprema je deo rešenja, ne polazna tačka.</h2>
+        <h2>Biramo rešenje prema objektu i problemu.</h2>
         <div className="cards">
           {technologyItems.map((item) => (
             <article className="card" key={item.title}>
