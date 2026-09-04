@@ -28,7 +28,9 @@ const technologyItems = [
   },
   {
     title: 'Toplotne pumpe',
-    text: 'Izbor i uklapanje toplotnih pumpi u sistem grejanja, hlađenja i pripreme objekta za efikasniji rad.',
+    text: 'Toplotne pumpe za grejanje, hlađenje i sanitarnu toplu vodu, uključujući kombinovane i nestandardne energetske šeme.',
+    href: '/toplotne-pumpe',
+    cta: 'Opis rešenja →',
   },
 ];
 
@@ -72,6 +74,7 @@ export default function HomePage() {
           <div className="hero-actions">
             <a className="button button-secondary" href="/vlaga">Vlaga, buđ i kondenzacija →</a>
             <a className="button button-secondary" href="/climtec">Ventilacija sa rekuperacijom →</a>
+            <a className="button button-secondary" href="/toplotne-pumpe">Toplotne pumpe →</a>
           </div>
         </div>
         <ul className="service-list">
@@ -92,6 +95,7 @@ export default function HomePage() {
           <div className="hero-actions">
             <a className="button button-secondary" href="/effi">EFFI radijaciono grejanje →</a>
             <a className="button button-secondary" href="/climtec">Climtec ventilacija →</a>
+            <a className="button button-secondary" href="/toplotne-pumpe">Toplotne pumpe →</a>
           </div>
         </div>
         <ul className="service-list">
@@ -107,7 +111,7 @@ export default function HomePage() {
             <article className="card" key={item.title}>
               <h3>{item.title}</h3>
               <p>{item.text}</p>
-              {item.href ? <a className="button button-secondary" href={item.href}>{item.cta}</a> : null}
+              <a className="button button-secondary" href={item.href}>{item.cta}</a>
             </article>
           ))}
         </div>
