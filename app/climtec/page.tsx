@@ -40,7 +40,7 @@ export default function ClimtecPage() {
           <a href="/">Početna</a>
           <a href="#gde">Primena</a>
           <a href="#kako">Kako biramo</a>
-          <a href="#kontakt">Kontakt</a>
+          <a href="#ponuda">Ponuda</a>
         </nav>
       </header>
 
@@ -52,7 +52,7 @@ export default function ClimtecPage() {
             Za stanove, kuće i objekte gde je potrebna kontrolisana izmena vazduha, a klasična centralna ventilacija nije praktična.
           </p>
           <div className="hero-actions">
-            <a className="button" href="#kontakt">Pošaljite podatke o prostoru</a>
+            <a className="button" href="#ponuda">Odaberite opremu i zatražite ponudu</a>
             <a className="button button-secondary" href="#gde">Gde ima smisla</a>
           </div>
         </div>
@@ -102,17 +102,17 @@ export default function ClimtecPage() {
         </div>
       </section>
 
-      <section className="section contact" id="kontakt">
+      <section className="section contact" id="ponuda">
         <div>
-          <p className="eyebrow">Preliminarni izbor</p>
-          <h2>Pošaljite osnovne podatke o prostoru.</h2>
+          <p className="eyebrow">Preliminarni izbor i ponuda</p>
+          <h2>Pošaljite podatke o prostoru — predložićemo uređaje i konfiguraciju.</h2>
           <p>
-            Napišite grad, tip objekta, približnu površinu i visinu prostorija, broj korisnika i šta želite da rešite: loš vazduh, kondenzaciju, nedostatak ventilacije ili drugi problem.
+            Napišite grad, tip objekta, približnu površinu i visinu prostorija, broj korisnika i šta želite da rešite. Na osnovu toga možemo pripremiti preliminarni izbor Climtec uređaja i ponudu.
           </p>
         </div>
         <div className="contact-links">
-          <a href="https://wa.me/381638421005">WhatsApp</a>
-          <a href="mailto:consulting@koretskiy.com">consulting@koretskiy.com</a>
+          <a href="https://wa.me/381638421005">Pošaljite podatke na WhatsApp</a>
+          <a href="mailto:consulting@koretskiy.com?subject=Climtec%20-%20zahtev%20za%20izbor%20opreme%20i%20ponudu">Zatražite ponudu emailom</a>
           <a href="tel:+381638421005">+381 63 842 1005</a>
         </div>
       </section>
