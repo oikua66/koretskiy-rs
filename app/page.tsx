@@ -18,10 +18,13 @@ const technologyItems = [
     title: 'Climtec',
     text: 'Decentralizovana ventilacija sa rekuperacijom za stanove, kuće, rekonstrukcije i objekte gde je potrebna kontrolisana izmena vazduha.',
     href: '/climtec',
+    cta: 'Izbor opreme i ponuda →',
   },
   {
     title: 'EFFI',
     text: 'Radijacioni sistemi grejanja za visoke, velike i specifične prostore, sa manjim zagrevanjem vazduha ispod plafona.',
+    href: '/effi',
+    cta: 'Izbor opreme i ponuda →',
   },
   {
     title: 'Toplotne pumpe',
@@ -86,6 +89,10 @@ export default function HomePage() {
           <p>
             Primena uključuje sportske sale i centre, kafiće i restorane, škole, komercijalne prostore, industrijske i logističke objekte.
           </p>
+          <div className="hero-actions">
+            <a className="button button-secondary" href="/effi">EFFI radijaciono grejanje →</a>
+            <a className="button button-secondary" href="/climtec">Climtec ventilacija →</a>
+          </div>
         </div>
         <ul className="service-list">
           {businessItems.map((item) => <li key={item}>{item}</li>)}
@@ -100,7 +107,7 @@ export default function HomePage() {
             <article className="card" key={item.title}>
               <h3>{item.title}</h3>
               <p>{item.text}</p>
-              {item.href ? <a className="button button-secondary" href={item.href}>Saznajte više →</a> : null}
+              {item.href ? <a className="button button-secondary" href={item.href}>{item.cta}</a> : null}
             </article>
           ))}
         </div>
