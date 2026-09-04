@@ -17,6 +17,7 @@ const technologyItems = [
   {
     title: 'Climtec',
     text: 'Decentralizovana ventilacija sa rekuperacijom za stanove, kuće, rekonstrukcije i objekte gde je potrebna kontrolisana izmena vazduha.',
+    href: '/climtec',
   },
   {
     title: 'EFFI',
@@ -67,6 +68,7 @@ export default function HomePage() {
           </p>
           <div className="hero-actions">
             <a className="button button-secondary" href="/vlaga">Vlaga, buđ i kondenzacija →</a>
+            <a className="button button-secondary" href="/climtec">Ventilacija sa rekuperacijom →</a>
           </div>
         </div>
         <ul className="service-list">
@@ -98,6 +100,7 @@ export default function HomePage() {
             <article className="card" key={item.title}>
               <h3>{item.title}</h3>
               <p>{item.text}</p>
+              {item.href ? <a className="button button-secondary" href={item.href}>Saznajte više →</a> : null}
             </article>
           ))}
         </div>
