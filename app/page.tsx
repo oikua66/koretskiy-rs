@@ -33,8 +33,8 @@ export default function HomePage() {
     <main>
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Koretskiy Engineering Solutions Serbia">
-          <span className="brand-mark">KC</span>
-          <span className="brand-text">Koretskiy Engineering Solutions Serbia</span>
+          <img className="brand-logo" src="https://koretskiy.com/logo.svg" alt="Koretskiy Consulting" />
+          <span className="brand-text">Engineering Solutions Serbia</span>
         </a>
         <nav>
           <a href="#dom">Za dom i stan</a>
