@@ -1,3 +1,7 @@
+import SiteHeader from './components/SiteHeader';
+import SiteFooter from './components/SiteFooter';
+import { business, mailtoHref } from '../lib/business';
+
 const privateItems = [
   'Vlaga, buđ i kondenzacija',
   'Loš vazduh i nedovoljna ventilacija',
@@ -33,21 +37,17 @@ const technologyItems = [
   },
 ];
 
+const nav = [
+  { href: '#dom', label: 'Za dom i stan' },
+  { href: '#objekti', label: 'Za objekte' },
+  { href: '#tehnologije', label: 'Tehnologije' },
+  { href: '#kontakt', label: 'Kontakt' },
+];
+
 export default function HomePage() {
   return (
     <main>
-      <header className="site-header">
-        <a className="brand" href="#top" aria-label="Koretskiy Engineering Solutions Serbia">
-          <img className="brand-logo" src="https://koretskiy.com/logo.svg" alt="Koretskiy Consulting" />
-          <span className="brand-text">Engineering Solutions Serbia</span>
-        </a>
-        <nav>
-          <a href="#dom">Za dom i stan</a>
-          <a href="#objekti">Za objekte</a>
-          <a href="#tehnologije">Tehnologije</a>
-          <a href="#kontakt">Kontakt</a>
-        </nav>
-      </header>
+      <SiteHeader nav={nav} homeHref="#top" />
 
       <section className="hero" id="top">
         <div className="hero-copy">
@@ -123,16 +123,13 @@ export default function HomePage() {
           <p>Pošaljite nekoliko rečenica i, ako je korisno, fotografije. Odgovoriću šta ima smisla proveriti kao sledeći korak.</p>
         </div>
         <div className="contact-links">
-          <a href="mailto:consulting@koretskiy.com">consulting@koretskiy.com</a>
-          <a href="tel:+381638421005">+381 63 842 1005</a>
-          <a href="https://wa.me/381638421005">WhatsApp</a>
+          <a href={mailtoHref()}>{business.email}</a>
+          <a href={business.phone.href}>{business.phone.display}</a>
+          <a href={business.whatsapp.href}>{business.whatsapp.label}</a>
         </div>
       </section>
 
-      <footer>
-        <span>© 2026 Koretskiy Consulting</span>
-        <a href="https://koretskiy.com">Business & consulting → koretskiy.com</a>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }
